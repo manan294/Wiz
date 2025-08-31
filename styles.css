@@ -130,10 +130,13 @@ button {
 }
 
 .center-part2 img {
-  position: absolute;
-  right: 97px;
-  height: 400px;
+  position: static;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
+
 
 .section1bot {
   display: flex;
@@ -237,10 +240,12 @@ button {
 }
 
 .elem-img img {
-  height: 100%;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   object-fit: contain;
+  display: block;
 }
+
 
 .elem-part1 {
   height: 100%;
@@ -475,6 +480,13 @@ white-space: nowrap;
 
 
 
+
+
+
+
+
+
+
 /* ----------------- MEDIA QUERY ----------------- */
 
 
@@ -525,8 +537,12 @@ white-space: nowrap;
   }
 
   .center-part2 img {
-    right: 4vw;
-    height: 45vh;
+    position: static;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
   }
 
   .section1bot {
